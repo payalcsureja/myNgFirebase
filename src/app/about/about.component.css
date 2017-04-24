@@ -1,0 +1,10 @@
+.about-user-img {
+  padding: 0px 50px 0px 0px;
+}
+.about-detail-info{
+  font-weight: bold;
+  line-height: 25px;
+}
+.about-detail-info .glyphicon{
+  padding-right: 10px;
+}

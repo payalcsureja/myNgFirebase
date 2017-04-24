@@ -1,4 +1,4 @@
-<div class="navbar navbar-fixed-top navbar-inverse" data-ng-class="navbarCssClass.institution || initialize()" role="banner" id="navbar">
+<nav class="navbar navbar-fixed-top navbar-inverse navbar-custom" role="banner" id="navbar">
   <div class="container">
 
     <!-- Navbar header -->
@@ -6,7 +6,7 @@
       <!-- <a title="{{navbarVm.navbarVars.appName}}" data-ui-sref="{{navbarVm.navbarVars.navbarLogo.hrefState}}" class="logo navbar-brand">
         <img alt="{{navbarVm.navbarVars.appName}} logo" data-ng-src="{{navbarVm.navbarVars.navbarLogo.src}}" class="img-responsive pull-left">
       </a> -->
-      <a class="navbar-brand" href="#">PAYAL SUREJA</a>
+      <a class="navbar-brand" href="#">Payal Sureja</a>
 
       <div>
         <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
@@ -27,6 +27,21 @@
           <section>
             <div class="sc-navbar-blocks" >
               <div class="nav navbar-right">
+
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="hidden active">
+                      <a href="#page-top"></a>
+                  </li>
+                  <li class="page-scroll">
+                      <a href="#summary">Summary</a>
+                  </li>
+                  <li class="page-scroll">
+                      <a href="#experience">Experience</a>
+                  </li>
+                  <li class="page-scroll">
+                      <a href="#education">Education</a>
+                  </li>
+                </ul>
 
                 <!-- Unauthenticated/anon User Navbar -->
                 <!-- <ul class="nav navbar-nav" data-sc-access-level="accessLevels.anon">
@@ -70,4 +85,4 @@
     <!-- End of Navbar links -->
 
   </div>
-</div>
+</nav>

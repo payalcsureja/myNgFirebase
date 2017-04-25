@@ -10,7 +10,7 @@
 
       <div>
         <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-        <button data-target="#sc-collapse-navbar" data-toggle="collapse" class="navbar-toggle" type="button">
+        <button data-target="#collapse-navbar" data-toggle="collapse" class="navbar-toggle" type="button">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -21,14 +21,29 @@
     <!-- End of Navbar header -->
 
     <!-- Navbar links -->
-    <div class="navbar-collapse collapse" id="sc-collapse-navbar">
+    <div class="navbar-collapse collapse" id="collapse-navbar">
       <nav role="navigation">
         <div>
           <section>
             <div class="sc-navbar-blocks" >
               <div class="nav navbar-right">
 
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-right hidden-sm hidden-md hidden-lg">
+                  <li class="hidden active">
+                      <a data-target="#collapse-navbar" data-toggle="collapse" href="#page-top"></a>
+                  </li>
+                  <li class="page-scroll">
+                      <a data-target="#collapse-navbar" data-toggle="collapse" href="#summary">Summary</a>
+                  </li>
+                  <li class="page-scroll">
+                      <a data-target="#collapse-navbar" data-toggle="collapse" href="#experience">Experience</a>
+                  </li>
+                  <li class="page-scroll">
+                      <a data-target="#collapse-navbar" data-toggle="collapse" href="#education">Education</a>
+                  </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right hidden-xs">
                   <li class="hidden active">
                       <a href="#page-top"></a>
                   </li>
@@ -47,7 +62,7 @@
                 <!-- <ul class="nav navbar-nav" data-sc-access-level="accessLevels.anon">
 
                   <li data-ng-if="navbarVm.user.isAuthorized(navbarVm.$state.get('anon').data.access)" >
-                    <a data-target="#sc-collapse-navbar" data-toggle="collapse" title="Sign In" data-ui-sref="{{navbarVm.navbarVars.navbarLogo.hrefState}}">Sign In</a>
+                    <a data-target="#collapse-navbar" data-toggle="collapse" title="Sign In" data-ui-sref="{{navbarVm.navbarVars.navbarLogo.hrefState}}">Sign In</a>
                   </li>
 
                 </ul> -->
@@ -56,23 +71,23 @@
                 <!-- <ul class="nav navbar-nav" data-sc-access-level="accessLevels.authenticateduser">
 
                   <li data-ng-if="navbarVm.user.isAuthorized(navbarVm.$state.get('user.today').data.access)" class="hidden-sm hidden-md hidden-lg" data-ng-class="{'active':navbarVm.$state.includes('user.today')}">
-                    <a data-target="#sc-collapse-navbar" data-toggle="collapse" title="Go to the Today page" data-ui-sref="{{'user.today'}}">Today</a>
+                    <a data-target="#collapse-navbar" data-toggle="collapse" title="Go to the Today page" data-ui-sref="{{'user.today'}}">Today</a>
                   </li>
 
                   <li data-ng-if="!navbarVm.isJobSeeker" class="hidden-sm hidden-md hidden-lg" data-ng-class="{'active':navbarVm.$state.includes('public.faqs')}">
-                    <a data-target="#sc-collapse-navbar" data-toggle="collapse" title="Go to the FAQs page" data-ui-sref="{{'public.faqs'}}">FAQs</a>
+                    <a data-target="#collapse-navbar" data-toggle="collapse" title="Go to the FAQs page" data-ui-sref="{{'public.faqs'}}">FAQs</a>
                   </li>
 
                   <li data-ng-if="navbarVm.user.isAuthorized(navbarVm.$state.get('user').data.access)" class="hidden-sm hidden-md hidden-lg">
-                    <a data-target="#sc-collapse-navbar" data-toggle="collapse" title="Sign out of {{navbarVm.navbarVars.appName}}" data-ng-click="navbarVm.logout();" href="javascript:void(0);">Sign Out</a>
+                    <a data-target="#collapse-navbar" data-toggle="collapse" title="Sign out of {{navbarVm.navbarVars.appName}}" data-ng-click="navbarVm.logout();" href="javascript:void(0);">Sign Out</a>
                   </li>
 
                   <li data-ng-if="navbarVm.user.isAuthorized(navbarVm.$state.get('user').data.access)" class="hidden-xs">
-                    <a data-target="#sc-collapse-navbar" title="Sign out of {{navbarVm.navbarVars.appName}}" data-ng-click="navbarVm.logout();" href="javascript:void(0);">Sign Out</a>
+                    <a data-target="#collapse-navbar" title="Sign out of {{navbarVm.navbarVars.appName}}" data-ng-click="navbarVm.logout();" href="javascript:void(0);">Sign Out</a>
                   </li>
 
                   <li data-ng-if="!navbarVm.isJobSeeker" class="hidden-xs" data-ng-class="{'active':navbarVm.$state.includes('public.faqs')}">
-                    <a data-target="#sc-collapse-navbar" title="Go to the FAQs page" href="javascript:void(0);" data-ui-sref="{{'public.faqs'}}">FAQs</a>
+                    <a data-target="#collapse-navbar" title="Go to the FAQs page" href="javascript:void(0);" data-ui-sref="{{'public.faqs'}}">FAQs</a>
                   </li>
 
                 </ul> -->

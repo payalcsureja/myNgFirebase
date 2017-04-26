@@ -7,8 +7,8 @@ import * as moment from 'moment';
   styleUrls: ['./footer.component.less']
 })
 export class FooterComponent implements OnInit {
-  currentYear: string;
-  title: string;
+  private currentYear: string;
+  private title: string;
 
   constructor() { }
 

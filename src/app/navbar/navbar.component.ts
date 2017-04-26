@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+// import * as $ from 'jquery';
 
 
 @Component({
@@ -13,13 +13,13 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit() {
 
-    $('.page-scroll a').click(function(){
-      //Animate
-      $('html, body').stop().animate({
-          scrollTop: $( $(this).attr('href') ).offset().top
-      }, 400);
-      return false;
-    });
+    // $('.page-scroll a').click(function(){
+    //   //Animate
+    //   $('html, body').stop().animate({
+    //       scrollTop: $( $(this).attr('href') ).offset().top
+    //   }, 400);
+    //   return false;
+    // });
 
   }
 

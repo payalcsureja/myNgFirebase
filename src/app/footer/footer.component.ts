@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as moment from 'moment';
 
 @Component({
   selector: 'app-footer',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.less']
 })
 export class FooterComponent implements OnInit {
+  currentYear: string;
+  title: string;
 
   constructor() { }
 
   ngOnInit() {
+    this.currentYear = moment().format('YYYY');
+    this.title = 'PAYAL SUREJA';
   }
 
 }

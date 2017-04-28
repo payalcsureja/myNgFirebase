@@ -5,14 +5,16 @@ import { HttpModule } from '@angular/http';
 import './core/rxjs-extensions';
 import { ScrollToModule } from 'ng2-scroll-to';
 
-import { CoreModule }    from './core/core.module';
+import { CoreModule } from './core/core.module';
+
+import { SkillsModule } from './skills/skills.module';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AboutComponent } from './about/about.component';
-import { SkillsComponent } from './skills/skills.component';
+// import { SkillsComponent } from './skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,7 @@ import { SkillsComponent } from './skills/skills.component';
     FooterComponent,
     NavbarComponent,
     AboutComponent,
-    SkillsComponent
+    // SkillsComponent
   ],
   imports: [
     // Angular modules
@@ -32,9 +34,10 @@ import { SkillsComponent } from './skills/skills.component';
     ScrollToModule.forRoot(),
 
     // Custom shared modules
-    CoreModule
+    CoreModule,
 
     // App modules
+    SkillsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

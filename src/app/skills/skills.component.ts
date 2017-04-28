@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { LoggerService } from '../core';
+
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
@@ -7,9 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private loggerService: LoggerService) { }
 
   ngOnInit() {
+    // this.loggerService.log('Test Core Log');
   }
 
 }

@@ -1,9 +1,11 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
 
+import './core/rxjs-extensions';
 import { ScrollToModule } from 'ng2-scroll-to';
+
+import { CoreModule }    from './core/core.module';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -22,12 +24,21 @@ import { SkillsComponent } from './skills/skills.component';
     SkillsComponent
   ],
   imports: [
+    // Angular modules
     BrowserModule,
-    FormsModule,
     HttpModule,
-    ScrollToModule.forRoot()
+
+    // 3rd party modules
+    ScrollToModule.forRoot(),
+
+    // Custom shared modules
+    CoreModule
+
+    // App modules
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+

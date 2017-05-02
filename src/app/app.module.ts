@@ -11,7 +11,7 @@ import { CoreModule } from './core/core.module';
 
 import { LayoutModule } from './layout/layout.module';
 import { AboutModule } from './about/about.module';
-import { SkillsModule } from './skills/skills.module';
+// import { SkillsModule } from './skills/skills.module';
 
 import { AppComponent } from './app.component';
 // import { HeaderComponent } from './header/header.component';
@@ -43,7 +43,7 @@ import { AppComponent } from './app.component';
     // App modules
     LayoutModule,
     AboutModule,
-    SkillsModule
+    // SkillsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

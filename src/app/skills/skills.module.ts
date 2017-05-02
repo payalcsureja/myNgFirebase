@@ -22,4 +22,3 @@ import { SkillService } from './shared/skill.service';
 })
 export class SkillsModule { }
 // avoids having to lazy load with loadChildren: "app/skills/skill.module#SkillModule"
-

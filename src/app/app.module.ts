@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
 
+// import { environment } from '../environments/environment';
+
 import './core/rxjs-extensions';
 // import { ScrollToModule } from 'ng2-scroll-to';
 

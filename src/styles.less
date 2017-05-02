@@ -1,10 +1,11 @@
 @import "./assets/css/styles-variables.less";
 
 body {
-  padding-top: 50px;
-  padding-bottom: 70px;
+  padding-top: 50px; /* Bootstrap fixed navbar */
+  padding-bottom: 70px; /* Bootstrap fixed footer */
 }
 
+/* Hr with star icon in middle */
 hr.star-light,
 hr.star-primary {
   padding: 0;
@@ -38,17 +39,19 @@ hr.star-primary:after {
   background-color: white;
   color: #2C3E50;
 }
-.section {
-  padding-top: 50px;
+/* Hr with star icon in middle End */
+
+/* Bootstrap fix and extras */
+.progress-bar-default {
+    background-color: #777777;
 }
-.section .jumbotron {
-  margin-bottom: 0px;
-}
-.section:last-child {
-  margin-bottom: 50px;
-}
+/* Bootstrap fix and extras End */
+
+/* General */
 .no-list{
   margin: 0px;
   padding: 0px;
   list-style: none;
 }
+/* General End */
+

@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
 
 import './core/rxjs-extensions';
-import { ScrollToModule } from 'ng2-scroll-to';
+// import { ScrollToModule } from 'ng2-scroll-to';
 
 import { CoreModule } from './core/core.module';
 
@@ -33,7 +33,7 @@ import { AppComponent } from './app.component';
     HttpModule,
 
     // 3rd party modules
-    ScrollToModule.forRoot(),
+    // ScrollToModule.forRoot(),
 
     // Custom shared modules
     CoreModule,

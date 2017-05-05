@@ -5,7 +5,7 @@ import { SpinnerState, SpinnerService } from './spinner.service';
 
 @Component({
   moduleId: module.id,
-  selector: 'story-spinner',
+  selector: 'app-spinner',
    templateUrl: './spinner.component.html',
   styleUrls: ['./spinner.component.css']
 })

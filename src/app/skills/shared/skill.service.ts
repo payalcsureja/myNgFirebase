@@ -4,6 +4,7 @@ import { Observable } from 'rxjs/Observable';
 
 import { Skill } from './skill.model';
 import { ExceptionService } from '../../core';
+import { SpinnerService } from '../../core/spinner/spinner.service';
 
 let skillsUrl = 'assets/api/skills.json';
 
@@ -11,17 +12,18 @@ let skillsUrl = 'assets/api/skills.json';
 export class SkillService {
 
   constructor(private http: Http,
-    private exceptionService: ExceptionService) {
+    private exceptionService: ExceptionService,
+    private spinnerService: SpinnerService) {
   }
 
   getSkills() {
-
+    this.spinnerService.show();
     return <Observable<Skill[]>>this.http
       .get(skillsUrl)
       .map(res => this.extractData<Skill[]>(res))
       // .do(data => console.log(data))
       .catch(this.exceptionService.catchBadResponse)
-      .finally(() => {});
+      .finally(() => this.spinnerService.hide());
   }
 
   private extractData<T>(res: Response) {

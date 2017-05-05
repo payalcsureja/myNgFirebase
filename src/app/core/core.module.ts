@@ -1,5 +1,4 @@
 import { NgModule, Optional, SkipSelf } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
 import { SpinnerModule } from './spinner/spinner.module';
 
@@ -9,7 +8,6 @@ import { throwIfAlreadyLoaded } from './module-import-guard';
 
 @NgModule({
   imports: [
-    CommonModule, // we use ngFor...
     SpinnerModule
   ],
   exports: [

@@ -29,44 +29,22 @@
               <div class="nav navbar-right">
 
                 <ul class="nav navbar-nav navbar-right hidden-sm hidden-md hidden-lg">
-                  <li class="hidden active">
+                  <!-- <li class="hidden active">
                       <a scrollTo data-target="#collapse-navbar" data-toggle="collapse" href="#page-top"></a>
-                  </li>
-                  <li class="page-scroll">
-                      <a scrollTo data-target="#collapse-navbar" data-toggle="collapse" routerLink="/about" fragment="about">About</a>
-                  </li>
-                  <li class="page-scroll">
-                      <a scrollTo data-target="#collapse-navbar" data-toggle="collapse" routerLink="/about" fragment="summary">Summary</a>
-                  </li>
-                  <li class="page-scroll">
-                      <a scrollTo data-target="#collapse-navbar" data-toggle="collapse" routerLink="/about" fragment="experience">Experience</a>
-                  </li>
-                  <li class="page-scroll">
-                      <a scrollTo data-target="#collapse-navbar" data-toggle="collapse" routerLink="/about" fragment="skills">Skills</a>
-                  </li>
-                  <li class="page-scroll">
-                      <a scrollTo data-target="#collapse-navbar" data-toggle="collapse" routerLink="/about" fragment="education">Education</a>
+                  </li> -->
+                  <li *ngFor="let item of menuItems" class="page-scroll" routerLinkActive="active">
+                      <a [routerLink]="item.link" [fragment]="item.fragment" routerLinkActive="active" scrollTo data-target="#collapse-navbar" data-toggle="collapse" >{{item.caption}}</a>
+                      <!-- <a [href]="'#'+item.fragment" scrollTo data-target="#collapse-navbar" data-toggle="collapse" >{{item.caption}}</a> -->
                   </li>
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right hidden-xs">
-                  <li class="hidden active">
+                  <!-- <li class="hidden active">
                       <a scrollTo href="#page-top"></a>
-                  </li>
-                  <li class="page-scroll">
-                      <a scrollTo routerLink="/about" fragment="about">About</a>
-                  </li>
-                  <li class="page-scroll">
-                      <a scrollTo routerLink="/about" fragment="summary">Summary</a>
-                  </li>
-                  <li class="page-scroll">
-                      <a scrollTo routerLink="/about" fragment="experience">Experience</a>
-                  </li>
-                  <li class="page-scroll">
-                      <a scrollTo routerLink="/about" fragment="skills">Skills</a>
-                  </li>
-                  <li class="page-scroll">
-                      <a scrollTo routerLink="/about" fragment="education">Education</a>
+                  </li> -->
+                  <li *ngFor="let item of menuItems" class="page-scroll" routerLinkActive="active">
+                      <a [routerLink]="item.link" [fragment]="item.fragment" routerLinkActive="active" scrollTo >{{item.caption}}</a> <!-- [routerLinkActiveOptions]="{ exact: true }" -->
+                      <!-- <a [href]="'#'+item.fragment" scrollTo >{{item.caption}}</a> -->
                   </li>
                 </ul>
 

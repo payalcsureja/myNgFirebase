@@ -34,7 +34,7 @@ export class SkillsComponent implements OnInit {
         this.loggerService.log(error);
       },
        () => {
-        this.loggerService.message('Skills retrieval completed.');
+        // this.loggerService.message('Skills retrieval completed.');
       });
   }
 

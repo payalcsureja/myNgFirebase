@@ -3,6 +3,8 @@ import { RouterModule } from '@angular/router';
 
 import { ScrollToModule } from 'ng2-scroll-to';
 
+import { SharedModule } from '../shared/shared.module';
+
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -15,6 +17,8 @@ import { NavbarComponent } from './navbar/navbar.component';
   	RouterModule,
     // 3rd party modules
     ScrollToModule.forRoot(),
+
+    SharedModule
   ],
   declarations: [HeaderComponent, FooterComponent, NavbarComponent],
 })

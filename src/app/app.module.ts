@@ -14,11 +14,9 @@ import { LayoutModule } from './layout/layout.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ErrorPageComponent } from './error-page/error-page.component';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
   imports: [
     // Angular modules
     BrowserModule,
@@ -40,6 +38,10 @@ import { AppComponent } from './app.component';
     LayoutModule,
     // AboutModule,
     // SkillsModule
+  ],
+  declarations: [
+    AppComponent,
+    ErrorPageComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

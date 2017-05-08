@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 import { ScrollToModule } from 'ng2-scroll-to';
 
@@ -11,6 +12,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     [HeaderComponent, FooterComponent, NavbarComponent]
   ],
   imports: [
+  	RouterModule,
     // 3rd party modules
     ScrollToModule.forRoot(),
   ],

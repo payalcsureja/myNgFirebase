@@ -32,8 +32,8 @@
                   <!-- <li class="hidden active">
                       <a scrollTo data-target="#collapse-navbar" data-toggle="collapse" href="#page-top"></a>
                   </li> -->
-                  <li *ngFor="let item of menuItems" class="page-scroll" routerLinkActive="active">
-                      <a [routerLink]="item.link" [fragment]="item.fragment" routerLinkActive="active" scrollTo data-target="#collapse-navbar" data-toggle="collapse" >{{item.caption}}</a>
+                  <li *ngFor="let item of menuItems" class="page-scroll">
+                      <a [routerLink]="item.link" [fragment]="item.fragment" scrollTo data-target="#collapse-navbar" data-toggle="collapse" >{{item.caption}}</a>
                       <!-- <a [href]="'#'+item.fragment" scrollTo data-target="#collapse-navbar" data-toggle="collapse" >{{item.caption}}</a> -->
                   </li>
                 </ul>
@@ -42,45 +42,12 @@
                   <!-- <li class="hidden active">
                       <a scrollTo href="#page-top"></a>
                   </li> -->
-                  <li *ngFor="let item of menuItems" class="page-scroll" routerLinkActive="active">
-                      <a [routerLink]="item.link" [fragment]="item.fragment" routerLinkActive="active" scrollTo >{{item.caption}}</a> <!-- [routerLinkActiveOptions]="{ exact: true }" -->
+                  <li *ngFor="let item of menuItems" class="page-scroll" ><!-- routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" -->
+                      <a [routerLink]="item.link" [fragment]="item.fragment" scrollTo >{{item.caption}}</a>
                       <!-- <a [href]="'#'+item.fragment" scrollTo >{{item.caption}}</a> -->
                   </li>
                 </ul>
 
-                <!-- Unauthenticated/anon User Navbar -->
-                <!-- <ul class="nav navbar-nav" data-sc-access-level="accessLevels.anon">
-
-                  <li data-ng-if="navbarVm.user.isAuthorized(navbarVm.$state.get('anon').data.access)" >
-                    <a scrollTo data-target="#collapse-navbar" data-toggle="collapse" title="Sign In" data-ui-sref="{{navbarVm.navbarVars.navbarLogo.hrefState}}">Sign In</a>
-                  </li>
-
-                </ul> -->
-
-                <!-- Authenticated User Navbar -->
-                <!-- <ul class="nav navbar-nav" data-sc-access-level="accessLevels.authenticateduser">
-
-                  <li data-ng-if="navbarVm.user.isAuthorized(navbarVm.$state.get('user.today').data.access)" class="hidden-sm hidden-md hidden-lg" data-ng-class="{'active':navbarVm.$state.includes('user.today')}">
-                    <a scrollTo data-target="#collapse-navbar" data-toggle="collapse" title="Go to the Today page" data-ui-sref="{{'user.today'}}">Today</a>
-                  </li>
-
-                  <li data-ng-if="!navbarVm.isJobSeeker" class="hidden-sm hidden-md hidden-lg" data-ng-class="{'active':navbarVm.$state.includes('public.faqs')}">
-                    <a scrollTo data-target="#collapse-navbar" data-toggle="collapse" title="Go to the FAQs page" data-ui-sref="{{'public.faqs'}}">FAQs</a>
-                  </li>
-
-                  <li data-ng-if="navbarVm.user.isAuthorized(navbarVm.$state.get('user').data.access)" class="hidden-sm hidden-md hidden-lg">
-                    <a scrollTo data-target="#collapse-navbar" data-toggle="collapse" title="Sign out of {{navbarVm.navbarVars.appName}}" data-ng-click="navbarVm.logout();" href="javascript:void(0);">Sign Out</a>
-                  </li>
-
-                  <li data-ng-if="navbarVm.user.isAuthorized(navbarVm.$state.get('user').data.access)" class="hidden-xs">
-                    <a scrollTo data-target="#collapse-navbar" title="Sign out of {{navbarVm.navbarVars.appName}}" data-ng-click="navbarVm.logout();" href="javascript:void(0);">Sign Out</a>
-                  </li>
-
-                  <li data-ng-if="!navbarVm.isJobSeeker" class="hidden-xs" data-ng-class="{'active':navbarVm.$state.includes('public.faqs')}">
-                    <a scrollTo data-target="#collapse-navbar" title="Go to the FAQs page" href="javascript:void(0);" data-ui-sref="{{'public.faqs'}}">FAQs</a>
-                  </li>
-
-                </ul> -->
               </div>
             </div>
           </section>

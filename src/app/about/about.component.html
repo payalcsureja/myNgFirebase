@@ -2,7 +2,7 @@
 <div class="app-scroll-spy hidden-xs hidden-sm">
   <ul class="nav btn-group-vertical no-list">
     <!-- <li class="page-scroll"><a class="btn btn-danger btn-block" [href]="'#page-top'" scrollTo href="">TOP</a></li> -->
-    <li *ngFor="let item of AboutMenuItems; let i = index; trackBy: trackByFn" class="page-scroll" [ngClass]="{'active': i == 0}">
+    <li *ngFor="let item of AboutMenuItems; let i = index;" class="page-scroll" [ngClass]="{'active': i == 0}">
       <a class="btn btn-danger btn-arrow-left btn-block" [href]="'#'+item.fragment" scrollTo href="">{{item.caption}}</a>
     </li>
   </ul>

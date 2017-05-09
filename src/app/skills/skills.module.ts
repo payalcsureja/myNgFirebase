@@ -1,22 +1,25 @@
 import { NgModule } from '@angular/core';
 
 import { SharedModule } from '../shared/shared.module';
-// import { routedComponents, SkillsRoutingModule } from './skills-routing.module';
+import { routedComponents, SkillsRoutingModule } from './skills-routing.module';
 
 import { SkillsComponent } from './skills.component';
+import { SkillListComponent } from './skill-list/skill-list.component';
 import { SkillService } from './shared/skill.service';
 
 @NgModule({
   imports: [
-  	SharedModule
-    //SkillsRoutingModule
+  	SharedModule,
+    SkillsRoutingModule
   ],
   exports: [
-    SkillsComponent
+    SkillsComponent,
+    SkillListComponent
   ],
   declarations: [
-    SkillsComponent
-    // routedComponents
+    // SkillsComponent,
+    SkillListComponent,
+    routedComponents
   ],
   providers: [
     SkillService

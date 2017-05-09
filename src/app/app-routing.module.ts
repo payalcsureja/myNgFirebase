@@ -16,6 +16,7 @@ import { ErrorPageComponent } from './error-page/error-page.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'about' },
+
   // {
   //   path: 'admin',
   //   loadChildren: 'app/admin/admin.module#AdminModule',
@@ -23,7 +24,10 @@ const routes: Routes = [
   //   canActivateChild: [AuthGuard],
   //   canLoad: [AuthGuard],
   // },
+
   { path: 'about', loadChildren: 'app/about/about.module#AboutModule' },
+  { path: 'skills', loadChildren: './skills/skills.module#SkillsModule'},
+
   // { path: '**', pathMatch: 'full', component: PageNotFoundComponent },
   // { path: '**', pathMatch: 'full', redirectTo: '/about' },
   // { path: 'not-found', component: ErrorPageComponent, data: {message: 'Page not found!'} },

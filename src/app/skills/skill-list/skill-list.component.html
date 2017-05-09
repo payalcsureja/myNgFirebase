@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="col-md-4" *ngFor="let skill of skills; let i = index;">
+      <div class="text-capitalize">{{skill.name}}</div>
+      <div class="progress">
+          <div class="progress-bar" [ngClass]="{'progress-bar-success': skill.priority == 1, 'progress-bar-primary': skill.priority == 2, 'progress-bar-info': skill.priority == 3, 'progress-bar-warning': skill.priority == 4, 'progress-bar-default': skill.priority == 5 }" role="progressbar" aria-valuenow="skill.expertiseLevel" aria-valuemin="0" aria-valuemax="100" [style.width.%]="skill.expertiseLevel"><!-- progress-bar-striped active -->
+              <span class="sr-only">{{skill.expertiseLevel}}%</span>
+          </div>
+      </div>
+  </div>
+</div>
+

@@ -18,11 +18,7 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
     this.menuItems = [
       { caption: 'About', link: ['/about'], fragment: null },
-      // { caption: 'About', link: ['/about'], fragment: 'about' },
-      // { caption: 'Summary', link: ['/about'], fragment: 'summary' },
-      // { caption: 'Experience', link: ['/about'], fragment: 'experience' },
-      // { caption: 'Skills', link: ['/about'], fragment: 'skills' },
-      // { caption: 'Education', link: ['/about'], fragment: 'education' },
+      // { caption: 'Skills', link: ['/skills'], fragment: null },
     ];
 
     // $('.page-scroll a').click(function(){

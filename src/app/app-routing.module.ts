@@ -25,12 +25,12 @@ const routes: Routes = [
   // },
   { path: 'about', loadChildren: 'app/about/about.module#AboutModule' },
   // { path: '**', pathMatch: 'full', component: PageNotFoundComponent },
-  { path: '**', pathMatch: 'full', redirectTo: '/about' },
+  // { path: '**', pathMatch: 'full', redirectTo: '/about' },
   // { path: 'not-found', component: ErrorPageComponent, data: {message: 'Page not found!'} },
   // { path: '**', redirectTo: '/not-found' }
 
-  // { path: 'error-page', component: ErrorPageComponent, data: {message: 'Page not Found!'} },
-  // { path: '**', pathMatch: 'full', redirectTo: '/error-page' }
+  { path: 'error-page', component: ErrorPageComponent, data: {message: 'Page not Found!'} },
+  { path: '**', pathMatch: 'full', redirectTo: '/error-page' }
 ];
 
 @NgModule({

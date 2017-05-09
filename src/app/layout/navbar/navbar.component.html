@@ -32,9 +32,8 @@
                   <!-- <li class="hidden active">
                       <a scrollTo data-target="#collapse-navbar" data-toggle="collapse" href="#page-top"></a>
                   </li> -->
-                  <li *ngFor="let item of menuItems" class="page-scroll">
-                      <a [routerLink]="item.link" [fragment]="item.fragment" scrollTo data-target="#collapse-navbar" data-toggle="collapse" >{{item.caption}}</a>
-                      <!-- <a [href]="'#'+item.fragment" scrollTo data-target="#collapse-navbar" data-toggle="collapse" >{{item.caption}}</a> -->
+                  <li *ngFor="let item of menuItems">
+                      <a [routerLink]="item.link" data-target="#collapse-navbar" data-toggle="collapse" >{{item.caption}}</a>
                   </li>
                 </ul>
 
@@ -42,9 +41,8 @@
                   <!-- <li class="hidden active">
                       <a scrollTo href="#page-top"></a>
                   </li> -->
-                  <li *ngFor="let item of menuItems" class="page-scroll" ><!-- routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" -->
-                      <a [routerLink]="item.link" [fragment]="item.fragment" scrollTo >{{item.caption}}</a>
-                      <!-- <a [href]="'#'+item.fragment" scrollTo >{{item.caption}}</a> -->
+                  <li *ngFor="let item of menuItems" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                      <a [routerLink]="item.link" href="">{{item.caption}}</a>
                   </li>
                 </ul>
 

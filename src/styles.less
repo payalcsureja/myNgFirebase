@@ -55,3 +55,153 @@ hr.star-primary:after {
 }
 /* General End */
 
+/* Scroll Spy side menu */
+.app-scroll-spy {
+  position: fixed;
+  top: 40%;
+  right: 0;
+}
+.app-scroll-spy .btn {
+  color: #fff;
+  background-color: @primary-color;
+  border-color: @primary-color;
+}
+.app-scroll-spy .nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: @sub-color;
+    color: #ffffff;
+}
+.app-scroll-spy .nav>li>a.btn{
+  border-radius: 0px;
+}
+.app-scroll-spy .nav>li.active>a.btn{
+  background-color: @sub-color;
+}
+.app-scroll-spy .nav>li>a {
+    padding: 10px 20px;
+}
+/* Scroll Spy side menu End */
+
+/* Arrow */
+.arrow-icon {
+  width: 0;
+  height: 0;
+}
+.arrow-icon.arrow-up {
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+
+  border-bottom: 5px solid black;
+}
+.arrow-icon.arrow-down {
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+
+  border-top: 20px solid black;
+}
+.arrow-icon.arrow-right {
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+
+  border-left: 60px solid black;
+}
+.arrow-icon.arrow-left {
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+
+  border-right:10px solid black;
+}
+
+.arrow-left-md {
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+}
+.arrow-right-md {
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+}
+.arrow-up-md {
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+}
+.arrow-down-md {
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+}
+
+.arrow-up-down-white {
+  border-color: white transparent;
+}
+.arrow-up-down-red {
+  border-color: #D01E2C transparent;
+}
+
+.arrow-left-right-white {
+  border-color: transparent white;
+}
+.arrow-left-right-red {
+  border-color: transparent #D01E2C;
+}
+/* Arrow End */
+
+.btn-arrow-right,
+.btn-arrow-left {
+    position: relative;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+.btn-arrow-right {
+    padding-left: 36px;
+}
+.btn-arrow-left {
+    padding-right: 36px;
+}
+.btn-arrow-right:before,
+.btn-arrow-right:after,
+.btn-arrow-left:before,
+.btn-arrow-left-arrow:after { /* make two squares (before and after), looking similar to the button */
+    content:"";
+    position: absolute;
+    top: 5px; /* move it down because of rounded corners */
+    width: 30px; /* same as height */
+    height: 30px; /* button_outer_height / sqrt(2) */
+    background: inherit; /* use parent background */
+    border: inherit; /* use parent border */
+    border-left-color: transparent; /* hide left border */
+    border-bottom-color: transparent; /* hide bottom border */
+    border-radius: 0px 4px 0px 0px; /* round arrow corner, the shorthand property doesn't accept "inherit" so it is set to 4px */
+    -webkit-border-radius: 0px 4px 0px 0px;
+    -moz-border-radius: 0px 4px 0px 0px;
+}
+.btn-arrow-right:before,
+.btn-arrow-right:after {
+    transform: rotate(45deg); /* rotate right arrow squares 45 deg to point right */
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+}
+.btn-arrow-left:before,
+.btn-arrow-left:after {
+    transform: rotate(225deg); /* rotate left arrow squares 225 deg to point left */
+    -webkit-transform: rotate(225deg);
+    -moz-transform: rotate(225deg);
+    -o-transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+}
+.btn-arrow-right:before,
+.btn-arrow-left:before { /* align the "before" square to the left */
+    left: -15px;
+}
+.btn-arrow-right:after,
+.btn-arrow-left:after { /* align the "after" square to the right */
+    right: -15px;
+}
+.btn-arrow-right:after,
+.btn-arrow-left:before { /* bring arrow pointers to front */
+    z-index: 1;
+}
+.btn-arrow-right:before,
+.btn-arrow-left:after { /* hide arrow tails background */
+    background-color: white;
+}

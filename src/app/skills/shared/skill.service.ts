@@ -3,8 +3,7 @@ import { Http, Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 
 import { Skill } from './skill.model';
-import { ExceptionService } from '../../core';
-import { SpinnerService } from '../../core/spinner/spinner.service';
+import { ExceptionService, SpinnerService } from '../../core';
 
 let skillsUrl = 'assets/api/skills.json';
 

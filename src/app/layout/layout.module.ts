@@ -12,7 +12,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     [HeaderComponent, FooterComponent, NavbarComponent]
   ],
   imports: [
-  	RouterModule,
+    RouterModule,
     SharedModule
   ],
   declarations: [HeaderComponent, FooterComponent, NavbarComponent],

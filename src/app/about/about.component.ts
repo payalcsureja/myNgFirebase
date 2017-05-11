@@ -10,13 +10,13 @@ class AboutMenuItem {
   styleUrls: ['./about.component.less']
 })
 export class AboutComponent implements OnInit {
-	AboutMenuItems: AboutMenuItem[];
+  AboutMenuItems: AboutMenuItem[];
 
   constructor() { }
 
   ngOnInit() {
-  	this.AboutMenuItems = [
-  	  { caption: 'About', fragment: 'about' },
+    this.AboutMenuItems = [
+      { caption: 'About', fragment: 'about' },
       { caption: 'Summary', fragment: 'summary' },
       { caption: 'Experience', fragment: 'experience' },
       { caption: 'Skills', fragment: 'skills' },

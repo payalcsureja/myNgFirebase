@@ -9,7 +9,7 @@ import { SkillService } from './shared/skill.service';
 
 @NgModule({
   imports: [
-  	SharedModule,
+    SharedModule,
     SkillsRoutingModule
   ],
   exports: [

@@ -2,7 +2,7 @@ import { Injectable, Optional, SkipSelf } from '@angular/core';
 import { Subject } from 'rxjs/Subject';
 
 export interface ToastMessage {
-  message:string
+  message: string;
 }
 
 @Injectable()

@@ -5,9 +5,9 @@ import { ToastService } from './toast/toast.service';
 @Injectable()
 export class LoggerService {
 
-	constructor(private toastService: ToastService) { }
+  constructor(private toastService: ToastService) { }
 
-	log(msg: string) {
+  log(msg: string) {
     console.log(msg);
   }
 

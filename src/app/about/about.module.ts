@@ -7,17 +7,17 @@ import { AboutRoutingModule, routedComponents } from './about-routing.module';
 import { AboutComponent } from './about.component';
 
 @NgModule({
-	imports: [
+  imports: [
     SharedModule,
-  	AboutRoutingModule,
+    AboutRoutingModule,
     SkillsModule
   ],
   exports: [
     [AboutComponent]
   ],
   declarations: [
-  	AboutComponent,
-  	routedComponents
+    AboutComponent,
+    routedComponents
   ]
 })
 export class AboutModule { }

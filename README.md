@@ -26,3 +26,25 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+##npm install --save toastr
+
+##"../node_modules/toastr/build/toastr.min.css",
+##"../node_modules/toastr/build/toastr.min.js"
+
+##import * as toastr from 'toastr'
+##toastr.error('toast working');
+
+## OR
+
+##npm install --save toastr
+##npm install --save @types/toastr
+
+##"../node_modules/toastr/build/toastr.min.css",
+##"../node_modules/toastr/build/toastr.min.js"
+
+##// in src/typings.d.ts
+##declare module 'toastr';
+
+##import * as toastr from 'toastr';

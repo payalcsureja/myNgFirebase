@@ -1,4 +1,4 @@
-# MyNgFirebase
+# MyNgFirebase - https://my-ng-firebase.firebaseapp.com/
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
@@ -27,7 +27,7 @@ Before running the tests make sure you are serving the app via `ng serve`.
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-
+<!--
 ##npm install --save toastr
 
 ##"../node_modules/toastr/build/toastr.min.css",
@@ -48,3 +48,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ##declare module 'toastr';
 
 ##import * as toastr from 'toastr';
+-->

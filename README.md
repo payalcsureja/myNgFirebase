@@ -2,6 +2,17 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
+# Steps to get it up and running
+
+Git clone https://github.com/payalcsureja/myNgFirebase.git
+Cd myNgFirebase
+Npm install
+
+npm install -g typescript
+npm install -g @angular/cli
+
+ng serve -o
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

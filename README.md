@@ -72,7 +72,7 @@ Make sure firebase is setup once, if not, run 'npm install -g firebase-tools' , 
 <!--
   git status
   git add *
-  git commit -a -m "utility shared functions"
+  git commit -a -m "rest api path fix"
   git push
 
   ng build --prod

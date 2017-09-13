@@ -4,7 +4,7 @@ import { environment } from '../../environments/environment';
 @Injectable()
 export class UtilsService {
   static getRestUrl() {
-    return environment.restUrl;
+    return environment.restUrl + 'api/';
   }
 }
 

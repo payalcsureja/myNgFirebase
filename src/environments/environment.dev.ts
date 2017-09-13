@@ -9,6 +9,6 @@ export const environment = {
   // host: 'xxx.com',
   // baseUrl: '/',
   // apiUrl: 'http://example.com/api/',
-  restUrl: 'http://localhost:8080/api/',
+  restUrl: 'http://localhost:8080/',
   imageUrl: '/assets/images/',
 };

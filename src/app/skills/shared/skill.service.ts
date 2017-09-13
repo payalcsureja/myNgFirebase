@@ -5,7 +5,7 @@ import { Observable } from 'rxjs/Observable';
 import { Skill } from './skill.model';
 import { ExceptionService, SpinnerService } from '../../core';
 
-let skillsUrl = 'assets/api/skills.json';
+import { UtilsService } from '../../shared/utils.service';
 
 @Injectable()
 export class SkillService {
@@ -16,11 +16,13 @@ export class SkillService {
   }
 
   getSkills() {
+    // const skillsUrl = this.utilsService.getRestUrl() + 'skills'; // doesn't work with static getRestUrl
+    const skillsUrl = UtilsService.getRestUrl() + 'skills';
     this.spinnerService.show();
     return <Observable<Skill[]>>this.http
       .get(skillsUrl)
       .map(res => this.extractData<Skill[]>(res))
-      // .do(data => console.log(data))
+      .do(data => console.log(data))
       .catch(this.exceptionService.catchBadResponse)
       .finally(() => this.spinnerService.hide());
   }

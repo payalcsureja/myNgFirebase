@@ -17,11 +17,13 @@ ng serve -o
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+Run `ng serve -o` to auto open dev server at `http://localhost:4200/`.
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
 
-## Build
+## Build ng build --environment=production
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
@@ -39,6 +41,13 @@ Before running the tests make sure you are serving the app via `ng serve`.
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 <!--
+## Firebase deploy
+
+Run build cmd for the env you want like qa,stage,prod,firebase... with ng build --prod
+Run firebase login and firebase deploy ... Which will deply dist dir
+Make sure firebase is setup once, if not, run 'npm install -g firebase-tools' , 'firebase login', 'firebase init' with 'dist/' dir
+
+
 ##npm install --save toastr
 
 ##"../node_modules/toastr/build/toastr.min.css",
@@ -59,4 +68,14 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ##declare module 'toastr';
 
 ##import * as toastr from 'toastr';
+
+<!--
+  git status
+  git add *
+  git commit -a -m "utility shared functions"
+  git push
+
+  ng build --prod
+  firebase login
+  firebase deploy
 -->

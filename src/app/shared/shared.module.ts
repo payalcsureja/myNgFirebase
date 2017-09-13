@@ -3,6 +3,9 @@ import { CommonModule } from '@angular/common';
 // import { FormsModule }   from '@angular/forms';
 
 import { ScrollToModule } from 'ng2-scroll-to';
+// import { environment } from '../../environments/environment';
+
+// import { UtilsService } from './utils.service';
 
 @NgModule({
   imports: [
@@ -19,6 +22,8 @@ import { ScrollToModule } from 'ng2-scroll-to';
   ],
   declarations: [
   ],
-  providers: []
+  providers: [
+    // UtilsService,
+  ]
 })
 export class SharedModule { }

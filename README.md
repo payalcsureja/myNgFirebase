@@ -72,7 +72,7 @@ Make sure firebase is setup once, if not, run 'npm install -g firebase-tools' , 
 <!--
   git status
   git add *
-  git commit -a -m "rest api path fix"
+  git commit -a -m "navbar shrink ui update"
   git push
 
   ng build --prod

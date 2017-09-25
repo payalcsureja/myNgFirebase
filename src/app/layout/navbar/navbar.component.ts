@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-// import * as $ from 'jquery';
+import * as $ from 'jquery';  // declare var $: any; // http://deanmalone.net/post/using-jquery-from-angular2/
 
 class MenuItem {
   constructor(public caption: string, public link: any[], public fragment: string) { }
@@ -21,6 +21,14 @@ export class NavbarComponent implements OnInit {
       // { caption: 'Skills', link: ['/skills'], fragment: null },
     ];
 
+    $(window).scroll(function() {
+      if ($(document).scrollTop() > 50) {
+        $('nav').addClass('shrink');
+      } else {
+        $('nav').removeClass('shrink');
+      }
+    });
+
     // $('.page-scroll a').click(function(){
     //   //Animate
     //   $('html, body').stop().animate({
@@ -30,5 +38,9 @@ export class NavbarComponent implements OnInit {
     // });
 
   }
+
+  // ngAfterViewChecked() {
+
+  // }
 
 }

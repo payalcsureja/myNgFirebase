@@ -7,6 +7,8 @@ import { LoggerService } from './logger.service';
 import { ExceptionService } from './exception.service';
 import { throwIfAlreadyLoaded } from './module-import-guard';
 
+// import * as $ from 'jquery';
+
 @NgModule({
   imports: [
     SpinnerModule,

@@ -13,7 +13,7 @@
 #cmd to run without docker file from any path
 #docker run -p 4200:4200 --rm -d -v /c/Users/prash/Documents/www/myNgFirebase:/usr/src/myNgFirebase:rw -w "/usr/src/myNgFirebase" --name pcsangular node npm start
 
-# Create image based on the official Node 6 image from dockerhub
+# Create image based on the official Node image from dockerhub
 FROM node:latest
 
 # Set metadata for an image

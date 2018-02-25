@@ -1,0 +1,31 @@
+# 1. Run docker-compose build
+# 2. Run docker-compose up -d
+
+version: '2' # specify docker-compose version
+
+# Define the services/containers to be run
+services:
+  myngfirebase: # name of the first service
+    container_name: myngfirebase
+    build: . #./angular-client # specify the directory of the Dockerfile
+    #build:
+      #context: .
+      #dockerfile: dockerfile.dev
+    ports:
+      - "4200:4200" # specify port forewarding
+    volumes:
+      - /c/Users/prash/Documents/www/myNgFirebase:/usr/src/myNgFirebase:rw
+      #- .:/usr/src/myNgFirebase:rw # this is working to load data
+      #- www
+    working_dir: /usr/src/myNgFirebase
+    networks:
+      - meanstack-network
+
+networks:
+  meanstack-network:
+    driver: bridge
+
+#volumes:
+  #./www:/c/Users/prash/Documents/myNodeRest #If you just want to use the path "data" you have to specify all address of it. Here's an exemple: ./data:cjworkbench:rw/
+  # www: #If you just want to use the path "data" you have to specify all address of it. Here's an exemple: ./data:cjworkbench:rw/
+  #driver: local

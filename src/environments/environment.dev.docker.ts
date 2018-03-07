@@ -9,6 +9,6 @@ export const environment = {
   // host: 'xxx.com',
   // baseUrl: '/',
   // apiUrl: 'http://example.com/api/',
-  restUrl: 'http://192.168.99.100:8080/',
+  restUrl: 'http://192.168.99.100:8080/', // ip of docker-machine ip to access in windows browser
   imageUrl: '/assets/images/',
 };

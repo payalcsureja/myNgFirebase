@@ -63,4 +63,7 @@ RUN npm install
 EXPOSE 4200
 
 # Serve the app
-CMD ["npm", "start"]
+#CMD ["npm", "start"]
+# packages.json defined with start:docker to use docker env file
+CMD [ "npm", "run", "start:docker" ]
+# CMD npm install && npm run start:docker

@@ -31,7 +31,7 @@ export class SkillService {
     if (res.status < 200 || res.status >= 300) {
       throw new Error('Bad response status: ' + res.status);
     }
-    let body = res.json ? res.json() : null;
+    const body = res.json ? res.json() : null;
     return <T>(body && body.data || {});
   }
 

@@ -78,4 +78,19 @@ Make sure firebase is setup once, if not, run 'npm install -g firebase-tools' , 
   ng build --prod
   firebase login
   firebase deploy
+
+
+  #How to use bash on Windows from visual studio code integrated terminal?
+  Then open visual studio code and open the command palate using "ctrl+shift+p". Then type "open user setting" , then select " open user setting " from the drop down menu.
+  Now copy this line of code to your own settings page (the pane on the right hand side) and save - "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe"
+
+  Note: "C:\\Program Files\Git\bin\bash.exe" is the path where the bash.exe is located from git installation.
+
+  Now press " ctrl+` " to open up terminal from vscode. And you will have bash
+
+ 
+  Press and hold Ctrl + ` to open terminal. Inside terminal type 'bash' without the quotations to use gitbash in terminal. Note: Make sure you have gitbash installed on your machine.
+  If you wish to use powershell again, just type 'powershell' without the quotations in terminal. To use Windows command line type 'cmd' in terminal.
+  The setting you choose will be used as your default.
+
 -->

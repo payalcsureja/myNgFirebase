@@ -18,6 +18,7 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
     this.menuItems = [
       { caption: 'About', link: ['/about'], fragment: null },
+      { caption: 'Portfolio', link: ['/portfolio'], fragment: null },
       // { caption: 'Skills', link: ['/skills'], fragment: null },
     ];
 

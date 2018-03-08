@@ -88,7 +88,16 @@ Make sure firebase is setup once, if not, run 'npm install -g firebase-tools' , 
 
   Now press " ctrl+` " to open up terminal from vscode. And you will have bash
 
- 
+
+  Some other vscode user settings
+  {
+    "files.autoSave": "afterDelay",
+    "editor.tabSize": 2,
+    "files.trimTrailingWhitespace": true,
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe"
+}
+
+
   Press and hold Ctrl + ` to open terminal. Inside terminal type 'bash' without the quotations to use gitbash in terminal. Note: Make sure you have gitbash installed on your machine.
   If you wish to use powershell again, just type 'powershell' without the quotations in terminal. To use Windows command line type 'cmd' in terminal.
   The setting you choose will be used as your default.

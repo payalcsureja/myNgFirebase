@@ -27,6 +27,7 @@ const routes: Routes = [
 
   { path: 'about', loadChildren: 'app/about/about.module#AboutModule' },
   { path: 'skills', loadChildren: './skills/skills.module#SkillsModule'},
+  { path: 'portfolio', loadChildren: 'app/portfolio/portfolio.module#PortfolioModule' },
 
   // { path: '**', pathMatch: 'full', component: PageNotFoundComponent },
   // { path: '**', pathMatch: 'full', redirectTo: '/about' },

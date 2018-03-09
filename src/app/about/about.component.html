@@ -3,7 +3,7 @@
   <ul class="nav btn-group-vertical no-list">
     <!-- <li class="page-scroll"><a class="btn btn-danger btn-block" [href]="'#page-top'" scrollTo href="">TOP</a></li> -->
     <li *ngFor="let item of AboutMenuItems; let i = index;" class="page-scroll" [ngClass]="{'active': i == 0}">
-      <a class="btn btn-danger btn-arrow-left btn-block" [href]="'#'+item.fragment" scrollTo href="">{{item.caption}}</a>
+      <a class="btn btn-arrow-left btn-block" [href]="'#'+item.fragment" scrollTo href="">{{item.caption}}</a>
     </li>
   </ul>
 </div>
@@ -28,7 +28,7 @@
               <div><a title ="Call me" href="tel:+1678-848-4344"><i class="glyphicon glyphicon-earphone"></i>+1 678-848-4344</a></div>
               <div><a target="_blank" title="LinkedIn" href="http://www.linkedin.com/in/payal-sureja"><i class="glyphicon glyphicon-search"></i>www.linkedin.com/in/payalsureja</a></div>
               <div><a target="_blank" title="GitHub" href="http://www.github.com/payalcsureja"><i class="glyphicon fa fa-github"></i>www.github.com/payalcsureja</a></div>
-              <div><a target="_blank" title="Stack overflow" href="http://www.stackoverflow.com/cv/payalcsureja"><i class="glyphicon fa fa-stack-overflow"></i>www.stackoverflow.com/cv/payalcsureja</a></div>
+              <!--<div><a target="_blank" title="Stack overflow" href="http://www.stackoverflow.com/cv/payalcsureja"><i class="glyphicon fa fa-stack-overflow"></i>www.stackoverflow.com/cv/payalcsureja</a></div>-->
               <div><a target="_blank" title="Download my resume" href="assets/miscellaneous/PayalSurejaFullStackWebDeveloperResume.pdf?7739487293424645"><i class="glyphicon fa fa-cloud-download"></i>Download my resume</a></div>
             </div>
           </div>

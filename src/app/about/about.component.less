@@ -13,6 +13,7 @@
 .jumbotron h2 {
   color: @sub-color;
   margin-top: 0;
+  text-transform: uppercase;
 }
 
 .about .jumbotron {
@@ -31,11 +32,17 @@
   padding-right: 10px;
 }
 
-hr.star-primary:after {
-    background-color: #eeeeee;
+p.star-primary:after {
+    background-color: #ffffff;
     color: @sub-color;
 }
-hr.star-primary {
+p.star-primary {
     border-color: @sub-color;
+}
+
+@media (max-width: @screen-xs) {
+  .about .jumbotron {
+    padding-top: 0;
+  }
 }
 

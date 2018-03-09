@@ -14,9 +14,13 @@ body {
   z-index: 9999;
 }
 
+.font-weight-bold{
+  font-weight: bold;
+}
+
 /* Hr with star icon in middle */
-hr.star-light,
-hr.star-primary {
+p.star-light,
+p.star-primary {
   padding: 0;
   border: none;
   border-top: solid 5px;
@@ -24,27 +28,27 @@ hr.star-primary {
   max-width: 250px;
   margin: 25px auto 30px;
 }
-hr.star-light:after,
-hr.star-primary:after {
+p.star-light:after,
+p.star-primary:after {
   content: "\f005";
   font-family: FontAwesome;
   display: inline-block;
   position: relative;
   top: -0.8em;
-  font-size: 2em;
+  font-size: 1.5em;
   padding: 0 0.25em;
 }
-hr.star-light {
+p.star-light {
   border-color: white;
 }
-hr.star-light:after {
+p.star-light:after {
   background-color: #18BC9C;
   color: white;
 }
-hr.star-primary {
+p.star-primary {
   border-color: #2C3E50;
 }
-hr.star-primary:after {
+p.star-primary:after {
   background-color: white;
   color: #2C3E50;
 }

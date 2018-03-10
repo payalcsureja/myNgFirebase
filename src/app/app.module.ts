@@ -7,6 +7,7 @@ import './core/rxjs-extensions';
 
 import { CoreModule } from './core/core.module';
 // import { environment } from '../environments/environment';
+import { AppGlobals } from './app.config';
 
 import { LayoutModule } from './layout/layout.module';
 // import { AboutModule } from './about/about.module';
@@ -43,7 +44,7 @@ import { ErrorPageComponent } from './error-page/error-page.component';
     AppComponent,
     ErrorPageComponent
   ],
-  providers: [],
+  providers: [AppGlobals],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

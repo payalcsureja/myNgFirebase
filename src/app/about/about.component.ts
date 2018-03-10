@@ -16,7 +16,7 @@ export class AboutComponent implements OnInit {
 
   ngOnInit() {
     this.AboutMenuItems = [
-      { caption: 'About', fragment: 'about' },
+      { caption: 'Profile', fragment: 'about' },
       { caption: 'Summary', fragment: 'summary' },
       { caption: 'Experience', fragment: 'experience' },
       { caption: 'Skills', fragment: 'skills' },

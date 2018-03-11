@@ -2,7 +2,7 @@
   <div class="col-md-4" *ngFor="let skill of skills; let i = index;">
       <div class="text-capitalize">{{skill.name}}</div>
       <div class="progress">
-          <div class="progress-bar" [ngClass]="{'progress-bar-success': skill.priority == 1, 'progress-bar-primary': skill.priority == 2, 'progress-bar-info': skill.priority == 3, 'progress-bar-warning': skill.priority == 4, 'progress-bar-default': skill.priority == 5 }" role="progressbar" aria-valuenow="skill.expertiseLevel" aria-valuemin="0" aria-valuemax="100" [style.width.%]="skill.expertiseLevel"><!-- progress-bar-striped active -->
+          <div class="progress-bar" [ngClass]="{'progress-bar-success': skill.expertiseLevel >= 85, 'progress-bar-primary': skill.expertiseLevel >= 75 && skill.expertiseLevel < 85, 'progress-bar-info': skill.expertiseLevel >= 65 && skill.expertiseLevel < 75, 'progress-bar-warning': skill.expertiseLevel >= 55 && skill.expertiseLevel < 65 , 'progress-bar-default': skill.expertiseLevel > 0 && skill.expertiseLevel < 55 }" role="progressbar" aria-valuenow="skill.expertiseLevel" aria-valuemin="0" aria-valuemax="100" [style.width.%]="skill.expertiseLevel"><!-- progress-bar-striped active -->
               <span class="sr-only">{{skill.expertiseLevel}}%</span>
           </div>
       </div>

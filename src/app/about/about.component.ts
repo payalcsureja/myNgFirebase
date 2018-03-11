@@ -19,8 +19,9 @@ export class AboutComponent implements OnInit {
       { caption: 'Profile', fragment: 'about' },
       { caption: 'Summary', fragment: 'summary' },
       { caption: 'Experience', fragment: 'experience' },
-      { caption: 'Skills', fragment: 'skills' },
       { caption: 'Education', fragment: 'education' },
+      { caption: 'Skills', fragment: 'skills' },
+      { caption: 'Interests', fragment: 'interests' },
     ];
   }
 

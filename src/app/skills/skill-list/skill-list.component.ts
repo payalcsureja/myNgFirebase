@@ -25,6 +25,12 @@ export class SkillListComponent implements OnInit {
   getSkills() {
     this.skills = [];
     this.skillService.getSkills()
+      .map((skills) => {
+          skills.sort((a, b) => {
+              return a.expertiseLevel < b.expertiseLevel ? 1 : -1;
+          });
+          return skills;
+      })
       .subscribe(skills => {
         this.skills = skills;
       },
@@ -34,7 +40,8 @@ export class SkillListComponent implements OnInit {
       },
        () => {
         // this.loggerService.message('Skills retrieval completed.');
-      });
+      })
+      ;
   }
 
 }

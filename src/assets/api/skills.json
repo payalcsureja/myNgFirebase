@@ -17,12 +17,12 @@
     },
     {
       "name": "AngularJs",
-      "expertiseLevel": 70,
+      "expertiseLevel": 90,
       "priority": 2
     },
     {
       "name": "Javascript",
-      "expertiseLevel": 90,
+      "expertiseLevel": 80,
       "priority": 2
     },
     {
@@ -61,13 +61,8 @@
       "priority": 4
     },
     {
-      "name": "Drupal",
+      "name": "Drupal/Joomla",
       "expertiseLevel": 70,
-      "priority": 4
-    },
-    {
-      "name": "Joomla",
-      "expertiseLevel": 90,
       "priority": 4
     },
     {
@@ -104,6 +99,41 @@
       "name": "Bower",
       "expertiseLevel": 70,
       "priority": 5
+    },
+    {
+      "name": "Docker",
+      "expertiseLevel": 50,
+      "priority": 5
+    },
+    {
+      "name": "React",
+      "expertiseLevel": 40,
+      "priority": 5
+    },
+    {
+      "name": "Mongodb",
+      "expertiseLevel": 40,
+      "priority": 5
+    },
+    {
+      "name": "Heroku - platform as a service (PaaS)",
+      "expertiseLevel": 40,
+      "priority": 5
+    },
+    {
+      "name": "Firebase - platform as a Service (PaaS)",
+      "expertiseLevel": 40,
+      "priority": 5
+    },
+    {
+      "name": "Angular2/4/5",
+      "expertiseLevel": 70,
+      "priority": 2
+    },
+    {
+      "name": "Nodejs/Express",
+      "expertiseLevel": 60,
+      "priority": 2
     }
   ]
 }

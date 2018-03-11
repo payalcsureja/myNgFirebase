@@ -2,48 +2,93 @@
   "data": [
     {
       "name": "LAMP",
-      "expertiseLevel": 90,
+      "expertiseLevel": 90.99,
       "priority": 1
     },
     {
-      "name": "PHP",
-      "expertiseLevel": 90,
+      "name": "REST",
+      "expertiseLevel": 90.9,
       "priority": 1
     },
     {
-      "name": "mySql",
-      "expertiseLevel": 90,
+      "name": "Bootstrap",
+      "expertiseLevel": 90.8,
       "priority": 1
     },
     {
       "name": "AngularJs",
-      "expertiseLevel": 90,
-      "priority": 2
-    },
-    {
-      "name": "Javascript",
-      "expertiseLevel": 80,
-      "priority": 2
-    },
-    {
-      "name": "REST",
-      "expertiseLevel": 90,
-      "priority": 2
-    },
-    {
-      "name": "Bootstrap",
-      "expertiseLevel": 90,
+      "expertiseLevel": 90.7,
       "priority": 3
     },
     {
       "name": "jQuery",
-      "expertiseLevel": 90,
+      "expertiseLevel": 90.5,
       "priority": 3
     },
     {
+      "name": "mySql",
+      "expertiseLevel": 90.6,
+      "priority": 1
+    },
+    {
+      "name": "Javascript",
+      "expertiseLevel": 80.99,
+      "priority": 2
+    },
+    {
+      "name": "Typescript",
+      "expertiseLevel": 80.9,
+      "priority": 2
+    },
+    {
       "name": "LESS",
-      "expertiseLevel": 80,
+      "expertiseLevel": 80.7,
       "priority": 3
+    },
+    {
+      "name": "MVC",
+      "expertiseLevel": 80.8,
+      "priority": 4
+    },
+    {
+      "name": "Zend/Slim Framework",
+      "expertiseLevel": 80.5,
+      "priority": 4
+    },
+    {
+      "name": "Git/SVN",
+      "expertiseLevel": 80.6,
+      "priority": 5
+    },
+    {
+      "name": "Angular2/4/5",
+      "expertiseLevel": 70.99,
+      "priority": 2
+    },
+    {
+      "name": "Grunt/gulp",
+      "expertiseLevel": 70.9,
+      "priority": 5
+    },
+    {
+      "name": "Bower",
+      "expertiseLevel": 70.8,
+      "priority": 5
+    },
+    {
+      "name": "Agile",
+      "expertiseLevel": 70.7,
+      "priority": 5
+    },
+    {
+      "name": "SSO (Auth0)",
+      "expertiseLevel": 70.6,
+      "priority": 5
+    },
+    {
+      "name": "Drupal/Joomla",
+      "expertiseLevel": 70.5,
+      "priority": 4
     },
     {
       "name": "Ionic",
@@ -56,84 +101,39 @@
       "priority": 4
     },
     {
-      "name": "MVC",
-      "expertiseLevel": 70,
-      "priority": 4
+      "name": "NodeJs/Express",
+      "expertiseLevel": 60,
+      "priority": 2
     },
     {
-      "name": "Drupal/Joomla",
-      "expertiseLevel": 70,
-      "priority": 4
-    },
-    {
-      "name": "Zend/Slim Framework",
-      "expertiseLevel": 90,
-      "priority": 4
-    },
-    {
-      "name": "Git/SVN",
-      "expertiseLevel": 70,
-      "priority": 5
-    },
-    {
-      "name": "Agile",
-      "expertiseLevel": 70,
-      "priority": 5
-    },
-    {
-      "name": "SSO (Auth0)",
-      "expertiseLevel": 70,
-      "priority": 5
-    },
-    {
-      "name": "NPM",
-      "expertiseLevel": 70,
-      "priority": 5
-    },
-    {
-      "name": "Grunt/gulp",
-      "expertiseLevel": 70,
-      "priority": 5
-    },
-    {
-      "name": "Bower",
-      "expertiseLevel": 70,
-      "priority": 5
-    },
-    {
-      "name": "Docker",
-      "expertiseLevel": 50,
+      "name": "Docker/kubernetes",
+      "expertiseLevel": 60,
       "priority": 5
     },
     {
       "name": "React",
-      "expertiseLevel": 40,
+      "expertiseLevel": 60,
       "priority": 5
     },
     {
-      "name": "Mongodb",
-      "expertiseLevel": 40,
+      "name": "RxJS",
+      "expertiseLevel": 60,
+      "priority": 5
+    },
+    {
+      "name": "Mongodb/MongoLab",
+      "expertiseLevel": 50,
       "priority": 5
     },
     {
       "name": "Heroku - platform as a service (PaaS)",
-      "expertiseLevel": 40,
+      "expertiseLevel": 50,
       "priority": 5
     },
     {
       "name": "Firebase - platform as a Service (PaaS)",
-      "expertiseLevel": 40,
+      "expertiseLevel": 50,
       "priority": 5
-    },
-    {
-      "name": "Angular2/4/5",
-      "expertiseLevel": 70,
-      "priority": 2
-    },
-    {
-      "name": "Nodejs/Express",
-      "expertiseLevel": 60,
-      "priority": 2
     }
   ]
 }

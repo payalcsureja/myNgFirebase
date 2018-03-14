@@ -106,7 +106,7 @@
       "priority": 2
     },
     {
-      "name": "Docker/kubernetes",
+      "name": "Docker",
       "expertiseLevel": 60,
       "priority": 5
     },

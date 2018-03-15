@@ -7,7 +7,21 @@ html{
 body {
   padding-top: 50px; /* Bootstrap fixed navbar */
   padding-bottom: 70px; /* Bootstrap fixed footer */
-  background: url("assets/images/bg.png");
+  // background: url("assets/images/bg.png");
+  background: url(assets/images/bg.jpg);
+  background-color: #023da3;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+@media (max-width: @screen-lg) {
+  body {
+    background-size: cover;
+  }
+}
+@media (max-width: @screen-xs) {
+  body {
+    background-size: 100%;
+  }
 }
 
 .app-scroll-spy{
@@ -299,3 +313,13 @@ pm-app div.panel.panel-primary {
     }
 }
 */
+
+.spinner {
+  top: 15px !important;
+  right: 15px !important;
+  left: unset !important;
+}
+.spinner:before {
+  border: 2px solid @sub-color !important;
+  border-top-color: #ffffff !important;
+}

@@ -3,6 +3,14 @@
 .section {
   padding-top: 50px;
 }
+.section.about {
+  padding-top: 0px;
+}
+@media (max-width: @screen-xs) {
+  .section.about {
+    padding-top: 50px;
+  }
+}
 .section .jumbotron {
   margin-bottom: 0px;
   background-color: #ffffff;
@@ -15,12 +23,16 @@
   margin-top: 0;
   text-transform: uppercase;
 }
-
 .about .jumbotron {
-  background-color: #000000;
+  background-color: transparent;
   color: #ffffff;
 }
 
+
+.about a{
+  color: #ffffff;
+  font-size: 16px;
+}
 .about-user-img {
   padding: 0px 0px 0px 0px;
 }

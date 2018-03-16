@@ -8,10 +8,20 @@ body {
   padding-top: 50px; /* Bootstrap fixed navbar */
   padding-bottom: 70px; /* Bootstrap fixed footer */
   // background: url("assets/images/bg.png");
-  background: url(assets/images/bodybg.jpg);
-  background-color: #f14b00;
-  background-size: cover;
+  background: url(assets/images/bg.jpg);
+  background-color: #023da3;
+  background-size: 100%;
   background-repeat: no-repeat;
+}
+@media (max-width: @screen-lg) {
+  body {
+    background-size: cover;
+  }
+}
+@media (max-width: @screen-xs) {
+  body {
+    background-size: 100%;
+  }
 }
 
 .app-scroll-spy{
@@ -85,7 +95,7 @@ p.star-primary:after {
 .app-scroll-spy .btn {
   color: #fff;
   background-color: @primary-color;
-  // border-color: @primary-color;
+  border-color: @primary-color;
 }
 .app-scroll-spy .nav>li>a:focus, .nav>li>a:hover {
     text-decoration: none;

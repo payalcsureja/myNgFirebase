@@ -79,6 +79,8 @@ Make sure firebase is setup once, if not, run 'npm install -g firebase-tools' , 
   firebase login
   firebase deploy
 
+  if ng cmd gives error due to node version with angular cli issue, try npm run cmds ,, like npm run start, npm run build. You might want to update package.json for build to pass --prod option and then run npm run build. 
+
 
   #How to use bash on Windows from visual studio code integrated terminal?
   Then open visual studio code and open the command palate using "ctrl+shift+p". Then type "open user setting" , then select " open user setting " from the drop down menu.

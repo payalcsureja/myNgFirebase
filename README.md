@@ -1,4 +1,4 @@
-# MyNgFirebase - https://my-ng-firebase.firebaseapp.com/
+# MyNgFirebase - https://my-ng-firebase.firebaseapp.com/ https://payalcsureja.github.io/profile/
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
